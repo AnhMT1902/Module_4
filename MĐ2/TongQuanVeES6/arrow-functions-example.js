@@ -7,5 +7,4 @@ function arraySq(func, arr) {
     })
     return newArray;
 }
-
 console.log(arraySq(square, arr));

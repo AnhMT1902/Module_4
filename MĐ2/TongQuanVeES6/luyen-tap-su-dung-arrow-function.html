@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const inventory = [
+    {type:   "machine", value: 5000},
+    {type:   "machine", value:  650},
+    {type:      "duck", value:   10},
+    {type: "furniture", value: 1200},
+    {type:   "machine", value:   77}
+  ]
+  let [machine1, machine2,,,machine3] = inventory;
+  console.log(machine1, machine2, machine3);
+  let machine = machine1.value + machine2.value + machine3.value;
+  console.log(machine);
+</script>
+</body>
+</html>
