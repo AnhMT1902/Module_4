@@ -5,6 +5,7 @@ import {ManageMagazine} from "../manage/ManageMagazine";
 import {ManageNewspaper} from "../manage/ManageNewspaper";
 import {Magazine} from "../model/Magazine";
 import {Newspaper} from "../model/Newspaper";
+import {Document} from "../model/Document";
 
 let listDocument = new ManageDocument();
 let listBook = new ManageBook();
@@ -14,7 +15,7 @@ let readlineSync = require('readline-sync');
 let inpMenu;
 let menu = `
 ----- Quản lý tài liệu ----- \n
-1. Thêm mới 
+1. Quản lý thư viện sách
 2. Xóa theo mã 
 3. Tìm kiếm theo mã 
 4. Hiển thị thư viện 
@@ -29,30 +30,40 @@ let menuDocument = `
 2. Thêm Tạp Chí
 3. Thêm Báo
 `
+
+// let arrId: number[] = []
+// function randomId() {
+//         let id = Math.floor(Math.random() * 10);
+//         let index = arrId.indexOf(id)
+//         if (index == -1) {
+//             arrId.push(id);
+//             return id;
+//         }else randomId();
+// }
+
 while (inpMenu != 0) {
     console.log(menu)
     inpMenu = +readlineSync.question("Lua chon cua ban: \n");
     switch (inpMenu) {
         case 1:
             console.log(menuDocument)
-            inpMenu = +readlineSync.question("Tai lieu ban muon them: \n")
-            let code = +readlineSync.question("Ma tai lieu: \n");
+            inpMenu = +readlineSync.question("Tai lieu ban muon them: \n");
             let product = readlineSync.question("Nha xuat ban: \n");
             let release = +readlineSync.question("So luong: \n");
             switch (inpMenu) {
                 case 1:
                     let author = readlineSync.question("Tac gia: \n");
                     let page = +readlineSync.question("So trang: \n");
-                    listDocument.addProduct(new Book(code, product,release,author,page));
+                    listDocument.addProduct(new Book(Document.randomId(), product, release, author, page));
                     break;
                 case 2:
                     let issue = +readlineSync.question("So luong phat hanh: \n");
                     let month = +readlineSync.question("Thang phat hanh: \n");
-                    listDocument.addProduct(new Magazine(code, product,release,issue,month));
+                    listDocument.addProduct(new Magazine(Document.randomId(), product, release, issue, month));
                     break;
                 case 3:
                     let day = +readlineSync.question("Ngay phat hanh: \n");
-                    listDocument.addProduct(new Newspaper(code, product,release,day));
+                    listDocument.addProduct(new Newspaper(Document.randomId(), product, release, day));
                     break;
             }
             break;

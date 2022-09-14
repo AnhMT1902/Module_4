@@ -1,6 +1,6 @@
-export interface Manage<T> {
+export interface InterfaceManage<T> {
     showAll();
     addProduct(t: T);
     removeProduct(code: number);
-    findProductByType();
+    findProductByCode(code: number);
 }

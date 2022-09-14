@@ -3,12 +3,14 @@ import {ManageDocument} from "../manage/ManageDocument";
 import {ManageBook} from "../manage/ManageBook";
 import {ManageMagazine} from "../manage/ManageMagazine";
 import {ManageNewspaper} from "../manage/ManageNewspaper";
+import {Id} from "../const/Id";
 
 let readlineSync = require('readline-sync');
 let listDocument = new ManageDocument();
 let listBook = new ManageBook();
 let listMagazine = new ManageMagazine();
 let listNewspaper = new ManageNewspaper();
+let listID = new Id();
 let choiceDocument: number;
 let choiceBook: number;
 
@@ -16,12 +18,12 @@ let choiceBook: number;
 function showMenuDocument() {
     let menuDocument = `
 CHÀO MỪNG BẠN ĐẾN VỚI THƯ VIỆN
------ Quản lý tài liệu ----- \n
+----- Quản lý thư viện ----- \n
 1. Quản lý Sách
 2. Quản lý Tạp Chí
 3. Quản lý Báo
-4. Xóa theo mã 
-5. Tìm kiếm theo mã 
+4. Xóa tài theo mã 
+5. Tìm kiếm tài liệu theo mã 
 6. Hiển thị thư viện 
 7. Hiển thị Sách 
 8. Hiển thị Tạp Chí 
