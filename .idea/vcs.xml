@@ -6,9 +6,11 @@
     <mapping directory="$PROJECT_DIR$/CodeGymMD1/1.2.3.4" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/CodeGymMD1/7. Biến, kiểu dữ liệu và toán tử" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/CodeGymMD1/kiểm tra kết thúc MODULE1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MĐ1" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MĐ1/1.2.3.4" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MĐ1/7. Biến, kiểu dữ liệu và toán tử" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MĐ1/kiểm tra kết thúc MODULE1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MĐ2" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/myprojeck" vcs="Git" />
   </component>
 </project>

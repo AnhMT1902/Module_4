@@ -1,6 +1,6 @@
-import {Cadres} from "./Cadres";
-import {Level} from "./Enum/Level";
-import {Gender} from "./Enum/Gender";
+import {Cadres} from "../Cadres";
+import {Level} from "../Enum/Level";
+import {Gender} from "../Enum/Gender";
 
 export class Worker extends Cadres {
     private _lever: Level;

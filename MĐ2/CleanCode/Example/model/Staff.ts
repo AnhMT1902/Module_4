@@ -1,5 +1,5 @@
-import {Cadres} from "./Cadres";
-import {Gender} from "./Enum/Gender";
+import {Cadres} from "../Cadres";
+import {Gender} from "../Enum/Gender";
 
 export class Staff extends Cadres {
     private _work: string;
